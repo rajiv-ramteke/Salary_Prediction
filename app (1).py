@@ -16,7 +16,7 @@ with open('linear_regression_model.pkl', 'rb') as file:
 # Load Dataset (FIXED PATH ✅)
 # -------------------------------
 try:
-    original_df = pd.read_csv('/content/Salary_Dataset_DataScienceLovers.csv')
+    original_df = pd.read_csv('Salary_Dataset_DataScienceLovers.csv')
 except FileNotFoundError:
     st.error("Dataset not found. Make sure CSV is in same folder as app.py")
     st.stop()
